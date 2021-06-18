@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de um carro novo</title>
+</head>
+
+<body>
+
+    <h2>Compra e valor de um carro zero Km: </h2>
+    <br>
+    <label>Valor inicial do carro: </label>
+    <input id="VI" type="text" /> 
+    <br><br>
+    <button id="somar" onclick="somarValores()">Calcular</button>
+
+</body>
+
+<script>
+
+    function somarValores() {
+        var VI = document.getElementById("VI").value;
+        var V1 = (parseFloat(VI) * 73) / 100;
+        var VF = parseFloat(VI) + parseFloat(V1);
+
+
+        alert("O custo final do carro após passar pelos cálculos percentuais e mais alguns impostos é igual a: R$" + VF);
+    }
+    
+</script>
+
+</html>

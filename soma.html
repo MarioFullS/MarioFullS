@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+
+<body>
+
+    <h2>Somar 2 números</h2>
+    <br>
+    <label>Valor 1: </label>
+    <input id="s1" type="text" /> 
+    <br><br>
+    <label>Valor 2: </label>
+    <input id="s2" type="text" /> 
+    <br><br>
+    <button id="somar" onclick="somarValores()">Somar</button>
+
+</body>
+
+<script>
+
+    function somarValores() {
+        var s1 = document.getElementById("s1").value;
+        var s2 = document.getElementById("s2").value;
+        var s3 = parseInt(s1) + parseInt(s2);
+
+        alert(s3);
+    }
+    
+</script>
+
+</html>

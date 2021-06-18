@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste de Salário</title>
+</head>
+
+<body>
+
+    <h2>Reajustar o salário de um funcionário:</h2>
+    <br>
+    <label>Digite aqui seu salário atual: </label>
+    <input id="SA" type="text" /> 
+    <br><br>
+    <label>Digite aqui o percentual de reajuste do trabalho: </label>
+    <input id="RT" type="text" /> 
+    <br><br>
+    <button id="calcular" onclick="CalcSalario()">Calcular</button>
+
+</body>
+
+<script>
+
+    function CalcSalario() {
+        var SA = document.getElementById("SA").value;
+        var RT = document.getElementById("RT").value;
+        var RTP = (parseFloat(SA) * parseFloat(RT)) / 100;
+        var SF = parseFloat(SA) + parseFloat(RTP);
+
+        alert("Após o reajuste na carteira, seu salário passa a ser a partir de agora: R$" + SF);
+    }
+    
+</script>
+
+</html>
